@@ -54,3 +54,12 @@ section img{
 #mountain02{
     z-index: 2;
 }
+
+.content{
+    color:white;
+    width: 75%;
+    margin:50px auto;
+}
+.content p{
+margin-top: 20px;
+}
