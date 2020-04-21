@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week3 06 Parallax</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <img src="assets/bg.png" id="bg">
+        <img src="assets/moon.png" id="moon">
+        <img src="assets/mountain01.png" id="mountain01">
+        <img src="assets/mountain02.png" id="mountain02">
+        <h2 id="text">Mountain</h2>
+    </section>
+    <script type="text/javascript">
+        let bg= document.getElementById("bg");
+        let moon= document.getElementById("moon");
+        let mountain01= document.getElementById("mountain01");
+        let mountain02= document.getElementById("mountain02");
+        let text= document.getElementById("text");
+
+        window.addEventListener('scroll', function(){
+            var value = window.scrollY;
+
+            bg.style.top = value*0.5 + 'px';
+            moon.style.left = -value*0.5 + 'px';
+            mountain01.style.top = value*0.15 + 'px';
+            mountain02.style.top = value*0.15 + 'px';
+
+        })
+
+    </script>
+</body>
+</html>
